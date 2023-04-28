@@ -18,3 +18,17 @@ Please pick one existed Debian package from the Ubuntu archive and implement the
    b. url of the launchpad ppa
    c. Please write down the steps that can be a reference guide for the next engineer who is new to this task.
    d. Include the output of the installation and testing.sh This is an example of  executing result for your reference: pastebin.ubuntu.com/p/hZ4sH647Jt/
+
+## Downloading the source code
+I choosed the latest **htop** as example package
+
+Downloading its source code
+```
+wget "http://archive.ubuntu.com/ubuntu/pool/main/h/htop/htop_3.2.2.orig.tar.gz"
+```
+
+Extracting it
+```
+tar xf htop_3.2.2.orig.tar.gz
+cd htop-3.2.2
+```
