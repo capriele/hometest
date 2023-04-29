@@ -1,0 +1,15 @@
+Source: htop
+Section: contrib/devel
+Priority: optional
+Maintainer: Alberto Petrucci <petrucci.alberto@gmail.com>
+Build-Depends: debhelper-compat (= 12), gcc (>= 9.4.0), make (>= 4.2.1), wget (>= 1.20.3), tar (>= 1.30), libncursesw5, libcunit1-ncurses, libncursesw5-dev, python, automake
+Standards-Version: 4.4.1
+Homepage: https://github.com/capriele/hometest
+#Vcs-Browser: https://salsa.debian.org/debian/htop
+#Vcs-Git: https://salsa.debian.org/debian/htop.git
+
+Package: htop
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Custom version of htop .deb
+ created for the home test

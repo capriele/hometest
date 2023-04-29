@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Fri, 28 Apr 2023 22:48:36 +0200
+Source: htop
+Architecture: source
+Version: 3.2.2-2ubuntu1
+Distribution: focal
+Urgency: medium
+Maintainer: Alberto Petrucci <petrucci.alberto@gmail.com>
+Changed-By: Alberto Petrucci <petrucci.alberto@gmail.com>
+Changes:
+ htop (3.2.2-2ubuntu1) focal; urgency=medium
+ .
+   * Initial release
+Checksums-Sha1:
+ 33618e614025959aad477d77841e804750c543d0 1689 htop_3.2.2-2ubuntu1.dsc
+ dcfc38733f2b7908e5627961bd1485778e292380 369873 htop_3.2.2.orig.tar.gz
+ a2f4220069fdf605b5226befe74885a8483f5c78 1880 htop_3.2.2-2ubuntu1.debian.tar.xz
+ 4daa18701fc0e568b88a7767f8851a2db1125250 6932 htop_3.2.2-2ubuntu1_source.buildinfo
+Checksums-Sha256:
+ cc95947f22a48c0e130bb91016998f7ca036e3e004e8563e356ce56b719b3f6e 1689 htop_3.2.2-2ubuntu1.dsc
+ 3829c742a835a0426db41bb039d1b976420c21ec65e93b35cd9bfd2d57f44ac8 369873 htop_3.2.2.orig.tar.gz
+ 1940bd4bab85607266747458dc3530cb0c0610943d599383671d94350feca4d0 1880 htop_3.2.2-2ubuntu1.debian.tar.xz
+ 21dda19e12ae980c8894016a398efc024922a8a75e8cddd8cce5371d8becc319 6932 htop_3.2.2-2ubuntu1_source.buildinfo
+Files:
+ 600dd9baa308af4db568896a56cc623b 1689 contrib/devel optional htop_3.2.2-2ubuntu1.dsc
+ 1f77a9ce6355f9deaac2e98fdad5beaa 369873 contrib/devel optional htop_3.2.2.orig.tar.gz
+ 9ddfc1fd19d740403a6f83062d15628b 1880 contrib/devel optional htop_3.2.2-2ubuntu1.debian.tar.xz
+ 3f3cc87890ce4743e17c89dd06b625bc 6932 contrib/devel optional htop_3.2.2-2ubuntu1_source.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEEaOZ3hSHjn4aPJT+sD+WFK93DKlwFAmRM2rEACgkQD+WFK93D
+Klw1kwv/aE5mtnEX/UV2FmTa98Ml/XvfhedTDYWRsEp9yjiTVn7OEUG+ZCbEHeCK
+sF5Asa0md7F1PM7Df9D+8Dv0g+VWzzD2tKQkn7YEl25MtdXM7if/GC0wfqKSjURC
+75oWjM+PK+8rd/XEZyOzDhju5WVO720oThKWkL9TLR3FbwmH2FBzV6CRquXuIxz9
+WLSq5rTfnec1d+X9G0BluZoDVDjxlSrZOJyciYCuDBsgUOW/Ol946EH6HhxEjqXC
+2G3DjArofgEeLBS/cPw8VeIJULX1dVCadr1Y7lfaXCUvbiBuGZm8lPSv6sHUrXa8
+LXYQmBZCKyOoMiK/j/VfePw+YhvVnJ4fzJrV69RTaNNgpGSKDoOTBQMyxx9tAxuV
+8Qu0okLRBonYuFgW3FBS0vc78dC8XJ7v79vKh8LpP3d1SMj0M7LJSksFUnMciVyi
+jDMI7WxFMW1C5pH6hytzoo3qa4/HmXLTFjEemdXIj6BRY98krQob9dG5bReotIO/
+VSQs+lFE
+=6xHj
+-----END PGP SIGNATURE-----

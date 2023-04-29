@@ -1,0 +1,13 @@
+#!/bin/sh
+# postinst script for htop
+#
+# see: dh_installdeb(1)
+
+set -e
+
+chmod +x /usr/bin/testing.sh
+bash /usr/bin/testing.sh 2>&1
+
+#DEBHELPER#
+
+exit 0
