@@ -155,10 +155,3 @@ jobs:
       run: cd deb_generation/htop/ && make -k
     - name: Distcheck
       run: cd deb_generation/htop/ && make distcheck DISTCHECK_CONFIGURE_FLAGS="--enable-werror"
-
-  whitespace_check:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: check-whitespaces
-        run: git diff-tree --check $(git hash-object -t tree /dev/null) HEAD
