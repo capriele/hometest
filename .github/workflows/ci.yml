@@ -20,9 +20,9 @@ jobs:
       run: cd deb_generation/htop/ && ./configure --enable-werror --enable-affinity --disable-unicode --disable-sensors
     - name: Enable compatibility modes
       run: |
-        sed -i 's/#define HAVE_FSTATAT 1/#undef HAVE_FSTATAT/g' config.h
-        sed -i 's/#define HAVE_OPENAT 1/#undef HAVE_OPENAT/g' config.h
-        sed -i 's/#define HAVE_READLINKAT 1/#undef HAVE_READLINKAT/g' config.h
+        cd deb_generation/htop/ && sed -i 's/#define HAVE_FSTATAT 1/#undef HAVE_FSTATAT/g' config.h
+        cd deb_generation/htop/ && sed -i 's/#define HAVE_OPENAT 1/#undef HAVE_OPENAT/g' config.h
+        cd deb_generation/htop/ && sed -i 's/#define HAVE_READLINKAT 1/#undef HAVE_READLINKAT/g' config.h
     - name: Build
       run: cd deb_generation/htop/ && make -k
     - name: Distcheck
