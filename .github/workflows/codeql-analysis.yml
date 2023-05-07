@@ -3,8 +3,12 @@ name: "CodeQL"
 on:
   push:
     branches: [main]
+    paths:
+    - cd 'deb_generation/htop/**'
   pull_request:
     branches: [main]
+    paths:
+    - cd 'deb_generation/htop/**'
   schedule:
     - cron: '0 1 * * 0'
 
@@ -37,13 +41,13 @@ jobs:
       run: sudo apt-get install --no-install-recommends libncursesw5-dev libhwloc-dev libnl-3-dev libnl-genl-3-dev libsensors4-dev libcap-dev
 
     - name: Bootstrap
-      run: cd ./deb_generation/htop/ && ./autogen.sh
+      run: ./autogen.sh
 
     - name: Configure
-      run: cd ./deb_generation/htop/ && ./configure --enable-werror --enable-openvz --enable-vserver --enable-ancient-vserver --enable-unicode --enable-hwloc --enable-delayacct --enable-sensors --enable-capabilities
+      run: ./configure --enable-werror --enable-openvz --enable-vserver --enable-ancient-vserver --enable-unicode --enable-hwloc --enable-delayacct --enable-sensors --enable-capabilities
 
     - name: Build
-      run: cd ./deb_generation/htop/ && make
+      run: make
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
