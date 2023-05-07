@@ -43,7 +43,7 @@ jobs:
       run: cd deb_generation/htop/ && ./configure --enable-werror --enable-openvz --enable-vserver --enable-ancient-vserver --enable-unicode --enable-hwloc --enable-delayacct --enable-sensors --enable-capabilities
 
     - name: Build
-      run: cd deb_generation/htop/ && ./make
+      run: cd deb_generation/htop/ && make
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
