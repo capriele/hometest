@@ -37,13 +37,13 @@ jobs:
       run: sudo apt-get install --no-install-recommends libncursesw5-dev libhwloc-dev libnl-3-dev libnl-genl-3-dev libsensors4-dev libcap-dev
 
     - name: Bootstrap
-      run: ./deb_generation/htop/autogen.sh
+      run: cd deb_generation/htop/ && ./autogen.sh
 
     - name: Configure
-      run: ./deb_generation/htop/configure --enable-werror --enable-openvz --enable-vserver --enable-ancient-vserver --enable-unicode --enable-hwloc --enable-delayacct --enable-sensors --enable-capabilities
+      run: cd deb_generation/htop/ && ./configure --enable-werror --enable-openvz --enable-vserver --enable-ancient-vserver --enable-unicode --enable-hwloc --enable-delayacct --enable-sensors --enable-capabilities
 
     - name: Build
-      run: ./deb_generation/htop/make
+      run: cd deb_generation/htop/ && ./make
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
